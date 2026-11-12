@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações — Painel DIDAS</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="../assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <a class="sb-brand" href="index.html"><img src="../assets/img/didas-logo.webp" alt="DIDAS" width="104" height="28" /></a>
+      <nav class="sb-nav" aria-label="Painel">
+        <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Visão geral</a>
+        <a href="leads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="3.5" cy="18" r="1.2"/></svg> Leads</a>
+        <a href="configuracoes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 13.5a1.6 1.6 0 0 0 .3 1.7l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V20a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 18.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 4.3 7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.7.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.7V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1Z"/></svg> Configurações</a>
+      </nav>
+      <div class="sb-foot">
+        <div class="sb-user"><span class="avatar">D</span><div><b>Equipe DIDAS</b><small>equipe@terminal404.com.br</small></div></div>
+        <a class="sb-logout" href="login.html">Sair</a>
+      </div>
+    </aside>
+
+    <main class="admin-content">
+      <header class="content-top">
+        <button class="sb-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <h1>Configurações</h1>
+      </header>
+      <div class="preview-banner"><div class="inner">Prévia — nada é salvo ainda. Os ajustes passam a valer com o backend.</div></div>
+
+      <div class="content-body">
+        <div class="set-section">
+          <div class="set-block">
+            <h2>Conta</h2>
+            <p class="s-hint">Dados de quem administra o painel.</p>
+            <div class="set-field"><label for="c-nome">Nome</label><input type="text" id="c-nome" value="Equipe DIDAS" /></div>
+            <div class="set-field"><label for="c-email">E-mail</label><input type="email" id="c-email" value="equipe@terminal404.com.br" /></div>
+          </div>
+
+          <div class="set-block">
+            <h2>Acesso restrito por domínio</h2>
+            <p class="s-hint">Regra de segurança: só entra quem tiver e-mail do domínio da empresa. Aplicada no login e no cadastro.</p>
+            <div class="set-field"><label for="c-dominio">Domínio permitido</label><input type="text" id="c-dominio" value="terminal404.com.br" /></div>
+            <div class="set-rule">Só e-mails <code>@terminal404.com.br</code> conseguem logar ou se cadastrar. (A validação real é feita no servidor, no backend.)</div>
+          </div>
+
+          <div class="set-block">
+            <h2>WhatsApp do site</h2>
+            <p class="s-hint">O número preenchido aqui alimenta o botão "Falar no WhatsApp" do site e a linha do rodapé.</p>
+            <div class="set-field"><label for="c-wa">Número (com DDD)</label><input type="tel" id="c-wa" placeholder="(00) 00000-0000 — a definir" /></div>
+          </div>
+
+          <button type="button" class="btn">Salvar alterações</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

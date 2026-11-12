@@ -1,0 +1,14 @@
+# Credenciais e configs locais
+api/config.local.php
+*.local.php
+.env
+
+# Logs / temporários
+*.log
+leads-fallback*.csv
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

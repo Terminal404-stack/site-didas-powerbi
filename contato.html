@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — vamos olhar para a sua gestão | DIDAS</title>
+  <meta name="description" content="Conte sobre o seu negócio e os desafios que quer resolver. A equipe da DIDAS avalia e retorna para conversar sobre um possível projeto de Power BI." />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="DIDAS — início"><img src="assets/img/didas-logo.webp" alt="DIDAS" width="118" height="34" /></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="btn nav-cta" href="contato.html">Avaliar gestão</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="drawer" id="drawer" hidden>
+      <nav aria-label="Menu">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn" href="contato.html">Avaliar gestão</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-head">
+      <div class="wrap">
+        <p class="eyebrow"><span class="ix">04</span> Contato</p>
+        <h1>Vamos olhar para a sua gestão?</h1>
+        <p class="intro">Conte um pouco sobre o seu negócio e os desafios que quer resolver. A equipe da DIDAS avalia e retorna para conversar sobre um possível projeto.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="contact-side">
+          <h2>Prefere começar por uma conversa?</h2>
+          <p>Fale direto no WhatsApp com uma mensagem já pronta, ou preencha o formulário ao lado para a avaliação inicial.</p>
+          <a class="btn btn-wa" id="whatsapp-btn" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.33 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.14.82.84-3.06-.2-.31a8.23 8.23 0 1 1 7 3.87Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.8-.23-.09-.39-.12-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <p class="fineprint">Seus dados são usados apenas para este contato. <a href="#" class="inline-link">Política de privacidade</a><!-- TODO: cliente -->.</p>
+        </div>
+
+        <form class="form" id="lead-form" novalidate>
+          <p class="form-hint">Campos com <span aria-hidden="true">*</span> são obrigatórios. Informe ao menos e-mail ou WhatsApp.</p>
+          <div class="errors-summary" id="form-errors" role="alert" tabindex="-1" hidden></div>
+
+          <div class="hp" aria-hidden="true">
+            <label>Não preencha este campo<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <div class="field">
+            <label for="nome">Nome <span class="req" aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" />
+            <small class="err" id="err-nome" data-for="nome"></small>
+          </div>
+
+          <div class="field">
+            <label for="empresa">Empresa / segmento <span class="req" aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label>
+            <input type="text" id="empresa" name="empresa" required autocomplete="organization" />
+            <small class="err" id="err-empresa" data-for="empresa"></small>
+          </div>
+
+          <div class="field-row">
+            <div class="field"><label for="email">E-mail</label><input type="email" id="email" name="email" autocomplete="email" /></div>
+            <div class="field"><label for="whatsapp">WhatsApp</label><input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" placeholder="(00) 00000-0000" /></div>
+          </div>
+          <small class="err err-contato" id="err-contato" data-for="contato">Informe ao menos e-mail ou WhatsApp.</small>
+
+          <fieldset class="field">
+            <legend>Principal desafio <span class="req" aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></legend>
+            <div class="checks" id="desafios">
+              <label class="check"><input type="checkbox" name="desafio" value="Dados espalhados" /> <span>Dados espalhados</span></label>
+              <label class="check"><input type="checkbox" name="desafio" value="Relatórios que consomem tempo" /> <span>Relatórios que consomem tempo</span></label>
+              <label class="check"><input type="checkbox" name="desafio" value="Indicadores sem contexto" /> <span>Indicadores sem contexto</span></label>
+              <label class="check"><input type="checkbox" name="desafio" value="Gestão no retrovisor" /> <span>Gestão no retrovisor</span></label>
+            </div>
+            <small class="err" id="err-desafio" data-for="desafio"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="organizacao">Como você organiza os dados hoje?</label>
+            <select id="organizacao" name="organizacao">
+              <option value="">Prefiro não dizer agora</option>
+              <option>Planilhas (Excel / Google Sheets)</option>
+              <option>Um ou mais sistemas (ERP, CRM, etc.)</option>
+              <option>Planilhas + sistemas misturados</option>
+              <option>Ainda não tenho organização definida</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+          </div>
+
+          <label class="check check-consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span>Autorizo o contato da DIDAS sobre o meu cenário. <span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <small class="err" id="err-consent" data-for="consent"></small>
+
+          <button type="submit" class="btn btn-lg btn-block">Enviar para avaliação</button>
+          <p class="form-success" id="form-success" role="status" hidden>Recebemos suas informações. A equipe DIDAS vai analisar seu cenário e entrar em contato pelo canal informado.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/didas-logo.webp" alt="DIDAS" width="112" height="32" />
+        <p>Gestão que vira decisão. Painéis de Power BI que ajudam negócios a transformar informação em direção.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+        <a href="#" class="inline-link">Privacidade</a>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <div class="footer-credit">
+        <a class="site-credit" href="https://www.terminal404.com.br/" target="_blank" rel="noopener" aria-label="Site desenvolvido por Terminal404"><img src="assets/img/terminal404.webp" alt="" width="28" height="28" /><span>por Terminal404</span></a>
+        <span class="credit-meta">CNPJ 51.745.368/0001-10 · WhatsApp <span id="wa-text">a definir</span></span>
+      </div>
+      <p>© <span id="year"></span> DIDAS · Projeto de conceito.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

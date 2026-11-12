@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visão geral — Painel DIDAS</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="../assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <a class="sb-brand" href="index.html"><img src="../assets/img/didas-logo.webp" alt="DIDAS" width="104" height="28" /></a>
+      <nav class="sb-nav" aria-label="Painel">
+        <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Visão geral</a>
+        <a href="leads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="3.5" cy="18" r="1.2"/></svg> Leads</a>
+        <a href="configuracoes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 13.5a1.6 1.6 0 0 0 .3 1.7l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V20a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 18.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 4.3 7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.7.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.7V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1Z"/></svg> Configurações</a>
+      </nav>
+      <div class="sb-foot">
+        <div class="sb-user"><span class="avatar">D</span><div><b>Equipe DIDAS</b><small>equipe@terminal404.com.br</small></div></div>
+        <a class="sb-logout" href="login.html">Sair</a>
+      </div>
+    </aside>
+
+    <main class="admin-content">
+      <header class="content-top">
+        <button class="sb-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <h1>Visão geral</h1>
+      </header>
+      <div class="preview-banner"><div class="inner">Prévia — dados de exemplo. A gravação real dos leads e o login entram na rodada do backend (PHP + MySQL).</div></div>
+
+      <div class="content-body">
+        <div class="stat-strip">
+          <div class="stat is-primary"><span class="s-label">Novos leads</span><strong class="s-val">3</strong><span class="s-sub">aguardando contato</span></div>
+          <div class="stat"><span class="s-label">Esta semana</span><strong class="s-val">17</strong><span class="s-sub up">+5 vs. semana passada</span></div>
+          <div class="stat"><span class="s-label">Total recebidos</span><strong class="s-val">128</strong><span class="s-sub">desde o início</span></div>
+          <div class="stat"><span class="s-label">Respondidos</span><strong class="s-val">86</strong><span class="s-sub">67% dos leads</span></div>
+        </div>
+
+        <div class="panel-grid">
+          <section class="card">
+            <h2>Leads por dia</h2>
+            <p class="c-sub">Últimos 7 dias · exemplo</p>
+            <div class="chart-days" role="img" aria-label="Gráfico de leads por dia, pico na sexta (dados de exemplo)">
+              <div class="cd" style="--h:35%"><span>Seg</span></div>
+              <div class="cd" style="--h:55%"><span>Ter</span></div>
+              <div class="cd" style="--h:45%"><span>Qua</span></div>
+              <div class="cd" style="--h:70%"><span>Qui</span></div>
+              <div class="cd peak" style="--h:95%"><span>Sex</span></div>
+              <div class="cd" style="--h:40%"><span>Sáb</span></div>
+              <div class="cd" style="--h:25%"><span>Dom</span></div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Últimos leads</h2>
+            <p class="c-sub"><a href="leads.html" class="inline-link">ver todos</a></p>
+            <div class="mini-leads">
+              <div class="mini-lead"><span class="ml-av">AM</span><div class="ml-main"><b>Ana Martins</b><small>Padaria Pão Nosso</small></div><time>14:32</time></div>
+              <div class="mini-lead"><span class="ml-av">CD</span><div class="ml-main"><b>Carlos Dias</b><small>TransLog</small></div><time>11:05</time></div>
+              <div class="mini-lead"><span class="ml-av">JA</span><div class="ml-main"><b>Juliana Alves</b><small>Clínica Vida</small></div><time>ontem</time></div>
+              <div class="mini-lead"><span class="ml-av">BS</span><div class="ml-main"><b>Bianca Souza</b><small>Moda Bela</small></div><time>ontem</time></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

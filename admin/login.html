@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar — Painel DIDAS</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="../assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin-body">
+  <div class="auth-wrap">
+    <main class="auth-card">
+      <span class="brand"><img src="../assets/img/didas-logo.webp" alt="DIDAS" width="112" height="28" /></span>
+      <h1>Entrar no painel</h1>
+      <p class="sub">Acesse para ver os leads recebidos pelo site.</p>
+
+      <!-- Prévia visual. Autenticação real (sessão + senha + regra de domínio) entra no backend. -->
+      <form action="index.html" method="get" novalidate>
+        <div class="field">
+          <label for="email">E-mail corporativo</label>
+          <input type="email" id="email" name="email" autocomplete="username" placeholder="voce@terminal404.com.br" />
+        </div>
+        <div class="field">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" autocomplete="current-password" placeholder="••••••••" />
+        </div>
+        <div class="auth-rule"><span>Acesso só para e-mails <code>@terminal404.com.br</code> (validado no servidor).</span></div>
+        <button type="submit" class="btn btn-lg">Entrar</button>
+      </form>
+
+      <p class="auth-alt">Não tem conta? <a href="cadastro.html">Criar acesso</a></p>
+      <p class="auth-note">Prévia — login ainda sem backend.</p>
+    </main>
+  </div>
+</body>
+</html>

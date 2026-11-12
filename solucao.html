@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A solução — um painel para as perguntas do seu negócio | DIDAS</title>
+  <meta name="description" content="Projetos de Power BI personalizados: mapeamento das informações, indicadores que importam e painéis que cabem na rotina — comercial, financeiro e operação." />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="DIDAS — início"><img src="assets/img/didas-logo.webp" alt="DIDAS" width="118" height="34" /></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="btn nav-cta" href="contato.html">Avaliar gestão</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="drawer" id="drawer" hidden>
+      <nav aria-label="Menu">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn" href="contato.html">Avaliar gestão</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-head">
+      <div class="wrap">
+        <p class="eyebrow"><span class="ix">02</span> A solução</p>
+        <h1>Um painel feito para as perguntas do seu negócio.</h1>
+        <p class="intro">A DIDAS desenvolve projetos de Power BI personalizados para reunir o que importa, acompanhar indicadores e deixar a leitura da operação mais rápida.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap split">
+        <ul class="caps">
+          <li><div><h3>Mapeamento das informações</h3><p>Entendemos as fontes de dados, os sistemas, as planilhas e os processos que a empresa já usa no dia a dia.</p></div></li>
+          <li><div><h3>Organização dos indicadores</h3><p>Definimos o que precisa ser acompanhado e quais perguntas a gestão realmente quer responder.</p></div></li>
+          <li><div><h3>Painéis personalizados</h3><p>Construímos dashboards com visualizações úteis para a realidade e a rotina do negócio — não um modelo pronto.</p></div></li>
+          <li><div><h3>Acesso e acompanhamento</h3><p>Visualização no computador ou no celular, conforme a configuração e as licenças aplicáveis.</p></div></li>
+          <li><div><h3>Evolução do projeto</h3><p>Ajustes e novas visões conforme as necessidades do negócio amadurecem com o tempo.</p></div></li>
+        </ul>
+
+        <div class="sticky-device">
+          <div class="device">
+            <div class="device-bar">
+              <div><span class="d-title">Painel DIDAS</span><span class="d-sub">uma empresa, várias visões</span></div>
+              <span class="tag">demonstração</span>
+            </div>
+            <div class="device-body">
+              <div class="tabs" role="tablist" aria-label="Visões do painel">
+                <button class="tab is-active" role="tab" aria-selected="true" id="tab-comercial" aria-controls="panel-comercial">Comercial</button>
+                <button class="tab" role="tab" aria-selected="false" id="tab-financeiro" aria-controls="panel-financeiro" tabindex="-1">Financeiro</button>
+                <button class="tab" role="tab" aria-selected="false" id="tab-operacao" aria-controls="panel-operacao" tabindex="-1">Operação</button>
+              </div>
+
+              <div class="tab-panel is-active" id="panel-comercial" role="tabpanel" aria-labelledby="tab-comercial" tabindex="0">
+                <div class="kpis">
+                  <div class="kpi"><span class="k-label">Vendas</span><strong class="k-val">1.284</strong><span class="k-delta up">+6,1%</span></div>
+                  <div class="kpi"><span class="k-label">Ticket médio</span><strong class="k-val">R$ 376</strong><span class="k-delta up">+2,3%</span></div>
+                  <div class="kpi"><span class="k-label">Conversão</span><strong class="k-val">4,8%</strong><span class="k-delta down">-0,4%</span></div>
+                </div>
+                <div class="bars" role="img" aria-label="Vendas por dia da semana, pico na sexta">
+                  <div class="bar" style="--h:40%"><span>Seg</span></div>
+                  <div class="bar" style="--h:62%"><span>Ter</span></div>
+                  <div class="bar" style="--h:55%"><span>Qua</span></div>
+                  <div class="bar" style="--h:78%"><span>Qui</span></div>
+                  <div class="bar peak" style="--h:92%"><span>Sex</span></div>
+                  <div class="bar" style="--h:48%"><span>Sáb</span></div>
+                </div>
+              </div>
+
+              <div class="tab-panel" id="panel-financeiro" role="tabpanel" aria-labelledby="tab-financeiro" tabindex="0" hidden>
+                <div class="kpis">
+                  <div class="kpi"><span class="k-label">Receita</span><strong class="k-val">R$ 482k</strong><span class="k-delta up">+12,4%</span></div>
+                  <div class="kpi"><span class="k-label">Margem</span><strong class="k-val">31%</strong><span class="k-delta up">+1,8%</span></div>
+                  <div class="kpi"><span class="k-label">Inadimplência</span><strong class="k-val">2,1%</strong><span class="k-delta up">-0,3%</span></div>
+                </div>
+                <div class="bars" role="img" aria-label="Receita por mês, tendência de alta até junho">
+                  <div class="bar" style="--h:70%"><span>Jan</span></div>
+                  <div class="bar" style="--h:58%"><span>Fev</span></div>
+                  <div class="bar" style="--h:66%"><span>Mar</span></div>
+                  <div class="bar" style="--h:82%"><span>Abr</span></div>
+                  <div class="bar" style="--h:75%"><span>Mai</span></div>
+                  <div class="bar peak" style="--h:94%"><span>Jun</span></div>
+                </div>
+              </div>
+
+              <div class="tab-panel" id="panel-operacao" role="tabpanel" aria-labelledby="tab-operacao" tabindex="0" hidden>
+                <div class="kpis">
+                  <div class="kpi"><span class="k-label">Pedidos</span><strong class="k-val">937</strong><span class="k-delta up">+4,0%</span></div>
+                  <div class="kpi"><span class="k-label">Prazo médio</span><strong class="k-val">1,8 dia</strong><span class="k-delta up">melhor</span></div>
+                  <div class="kpi"><span class="k-label">Ruptura</span><strong class="k-val">3,4%</strong><span class="k-delta up">-0,6%</span></div>
+                </div>
+                <div class="bars" role="img" aria-label="Volume por centro de distribuição, pico no CD3">
+                  <div class="bar" style="--h:52%"><span>CD1</span></div>
+                  <div class="bar" style="--h:68%"><span>CD2</span></div>
+                  <div class="bar peak" style="--h:88%"><span>CD3</span></div>
+                  <div class="bar" style="--h:60%"><span>CD4</span></div>
+                  <div class="bar" style="--h:72%"><span>CD5</span></div>
+                  <div class="bar" style="--h:44%"><span>CD6</span></div>
+                </div>
+              </div>
+
+              <p class="device-foot">Base fictícia. Escopo, integrações e atualização dos dados são definidos na avaliação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <p class="pull">A mesma empresa, vista por <span class="accent">comercial, financeiro e operação</span> — sem perder a visão do todo.</p>
+        <div class="hero-cta-row" style="margin-top:36px">
+          <a class="btn btn-lg" href="contato.html">Avaliar minha gestão</a>
+          <a class="textlink" href="processo.html">Como o projeto acontece</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/didas-logo.webp" alt="DIDAS" width="112" height="32" />
+        <p>Gestão que vira decisão. Painéis de Power BI que ajudam negócios a transformar informação em direção.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="desafio.html">O desafio</a>
+        <a href="solucao.html">A solução</a>
+        <a href="processo.html">Como funciona</a>
+        <a href="contato.html">Contato</a>
+        <a href="#" class="inline-link">Privacidade</a>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <div class="footer-credit">
+        <a class="site-credit" href="https://www.terminal404.com.br/" target="_blank" rel="noopener" aria-label="Site desenvolvido por Terminal404"><img src="assets/img/terminal404.webp" alt="" width="28" height="28" /><span>por Terminal404</span></a>
+        <span class="credit-meta">CNPJ 51.745.368/0001-10 · WhatsApp <span id="wa-text">a definir</span></span>
+      </div>
+      <p>© <span id="year"></span> DIDAS · Projeto de conceito.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

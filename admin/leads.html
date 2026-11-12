@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leads — Painel DIDAS</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0B0A12" />
+  <link rel="icon" href="../assets/img/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <a class="sb-brand" href="index.html"><img src="../assets/img/didas-logo.webp" alt="DIDAS" width="104" height="28" /></a>
+      <nav class="sb-nav" aria-label="Painel">
+        <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Visão geral</a>
+        <a href="leads.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="3.5" cy="18" r="1.2"/></svg> Leads</a>
+        <a href="configuracoes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 13.5a1.6 1.6 0 0 0 .3 1.7l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V20a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 18.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 4.3 7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.7.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.7V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1Z"/></svg> Configurações</a>
+      </nav>
+      <div class="sb-foot">
+        <div class="sb-user"><span class="avatar">D</span><div><b>Equipe DIDAS</b><small>equipe@terminal404.com.br</small></div></div>
+        <a class="sb-logout" href="login.html">Sair</a>
+      </div>
+    </aside>
+
+    <main class="admin-content">
+      <header class="content-top">
+        <button class="sb-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <h1>Leads</h1>
+        <div class="top-actions">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="search" id="search" placeholder="Buscar por nome ou empresa" aria-label="Buscar leads" />
+          </div>
+        </div>
+      </header>
+      <div class="preview-banner"><div class="inner">Prévia — dados de exemplo. Clique numa linha para ver o detalhe. Gravação real e login entram no backend.</div></div>
+
+      <div class="content-body">
+        <div class="toolbar">
+          <div class="chips">
+            <span class="chip accent"><b>3</b> novos</span>
+            <span class="chip"><b>6</b> no total</span>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar por status">
+            <button class="filter is-active" data-filter="todos">Todos</button>
+            <button class="filter" data-filter="novo">Novos</button>
+            <button class="filter" data-filter="visto">Vistos</button>
+            <button class="filter" data-filter="arquivado">Arquivados</button>
+          </div>
+        </div>
+
+        <table class="leads">
+          <thead>
+            <tr><th>Data</th><th>Nome</th><th>Empresa</th><th>Contato</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr class="lead" data-status="novo" data-data="11/11/2026 · 14:32" data-nome="Ana Martins" data-empresa="Padaria Pão Nosso · alimentação" data-contato="ana@paonosso.com" data-desafios="Dados espalhados, Relatórios que consomem tempo" data-organiza="Planilhas (Excel / Google Sheets)" data-mensagem="Queria acompanhar as vendas por loja num lugar só." data-origem="desafio.html">
+              <td data-l="Data" class="l-date">11/11 · 14:32</td><td data-l="Nome" class="l-name">Ana Martins</td><td data-l="Empresa" class="l-co">Padaria Pão Nosso</td><td data-l="Contato" class="l-contact">ana@paonosso.com</td><td data-l="Status"><span class="badge novo">novo</span></td>
+            </tr>
+            <tr class="lead" data-status="novo" data-data="11/11/2026 · 11:05" data-nome="Carlos Dias" data-empresa="TransLog · logística" data-contato="(41) 99812-3344" data-desafios="Gestão no retrovisor" data-organiza="Um ou mais sistemas (ERP, CRM)" data-mensagem="Descubro os problemas de frota tarde demais." data-origem="contato.html">
+              <td data-l="Data" class="l-date">11/11 · 11:05</td><td data-l="Nome" class="l-name">Carlos Dias</td><td data-l="Empresa" class="l-co">TransLog</td><td data-l="Contato" class="l-contact">(41) 99812-3344</td><td data-l="Status"><span class="badge novo">novo</span></td>
+            </tr>
+            <tr class="lead" data-status="novo" data-data="09/11/2026 · 16:10" data-nome="Juliana Alves" data-empresa="Clínica Vida · saúde" data-contato="(31) 99500-7788" data-desafios="Relatórios que consomem tempo, Indicadores sem contexto" data-organiza="Planilhas + sistemas misturados" data-mensagem="" data-origem="desafio.html">
+              <td data-l="Data" class="l-date">09/11 · 16:10</td><td data-l="Nome" class="l-name">Juliana Alves</td><td data-l="Empresa" class="l-co">Clínica Vida</td><td data-l="Contato" class="l-contact">(31) 99500-7788</td><td data-l="Status"><span class="badge novo">novo</span></td>
+            </tr>
+            <tr class="lead" data-status="visto" data-data="10/11/2026 · 17:48" data-nome="Bianca Souza" data-empresa="Moda Bela · varejo" data-contato="bianca@modabela.com" data-desafios="Indicadores sem contexto" data-organiza="Planilhas (Excel / Google Sheets)" data-mensagem="Tenho números, mas não sei o que olhar primeiro." data-origem="contato.html">
+              <td data-l="Data" class="l-date">10/11 · 17:48</td><td data-l="Nome" class="l-name">Bianca Souza</td><td data-l="Empresa" class="l-co">Moda Bela</td><td data-l="Contato" class="l-contact">bianca@modabela.com</td><td data-l="Status"><span class="badge visto">visto</span></td>
+            </tr>
+            <tr class="lead" data-status="visto" data-data="10/11/2026 · 09:20" data-nome="Rafael Lima" data-empresa="AutoPeças RL · automotivo" data-contato="rafael@autopecasrl.com" data-desafios="Dados espalhados" data-organiza="Planilhas + sistemas misturados" data-mensagem="Estoque e vendas em lugares diferentes." data-origem="contato.html">
+              <td data-l="Data" class="l-date">10/11 · 09:20</td><td data-l="Nome" class="l-name">Rafael Lima</td><td data-l="Empresa" class="l-co">AutoPeças RL</td><td data-l="Contato" class="l-contact">rafael@autopecasrl.com</td><td data-l="Status"><span class="badge visto">visto</span></td>
+            </tr>
+            <tr class="lead" data-status="arquivado" data-data="08/11/2026 · 10:00" data-nome="Marcos Pereira" data-empresa="Construfácil · construção" data-contato="marcos@construfacil.com" data-desafios="Gestão no retrovisor" data-organiza="Ainda não tem organização definida" data-mensagem="" data-origem="desafio.html">
+              <td data-l="Data" class="l-date">08/11 · 10:00</td><td data-l="Nome" class="l-name">Marcos Pereira</td><td data-l="Empresa" class="l-co">Construfácil</td><td data-l="Contato" class="l-contact">marcos@construfacil.com</td><td data-l="Status"><span class="badge arquivado">arquivado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <div class="drawer-overlay" id="drawer-overlay" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-nome" aria-hidden="true">
+    <div class="drawer-head">
+      <div><h2 id="d-nome">—</h2><p class="d-co" id="d-empresa">—</p></div>
+      <button class="drawer-close" aria-label="Fechar">×</button>
+    </div>
+    <dl>
+      <dt>Status</dt><dd><span class="badge novo" id="d-status">novo</span></dd>
+      <dt>Recebido em</dt><dd id="d-data">—</dd>
+      <dt>Contato</dt><dd id="d-contato">—</dd>
+      <dt>Principais desafios</dt><dd id="d-desafios">—</dd>
+      <dt>Como organiza os dados</dt><dd id="d-organiza">—</dd>
+      <dt>Mensagem</dt><dd id="d-mensagem">—</dd>
+      <dt>Origem</dt><dd id="d-origem">—</dd>
+    </dl>
+    <div class="drawer-actions">
+      <div class="row">
+        <button type="button" class="btn btn-line">Marcar como visto</button>
+        <button type="button" class="btn btn-line">Arquivar</button>
+      </div>
+      <a class="btn btn-wa" href="#" aria-disabled="true">Responder no WhatsApp</a>
+      <p class="c-sub" style="margin:0">As ações são ilustrativas — passam a funcionar com o backend.</p>
+    </div>
+  </aside>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>
